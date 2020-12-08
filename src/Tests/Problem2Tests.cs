@@ -1,6 +1,5 @@
 using Xunit;
 using ProjectEuler.Models;
-using System.Collections.Generic;
 
 namespace ProjectEuler.Tests
 {
