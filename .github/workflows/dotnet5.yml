@@ -23,3 +23,5 @@ jobs:
       run: dotnet build src/ProjectEuler.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test src/ProjectEuler.sln --no-restore --verbosity quiet
+    - name: Solutions
+      run: dotnet run --project src/Console/Console.csproj --configuration Release --no-restore 
