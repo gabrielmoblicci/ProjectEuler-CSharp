@@ -1,4 +1,4 @@
-name: .NET Core
+name: .NET
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.101
     - name: Install dependencies
-      run: dotnet restore .\src\
+      run: dotnet restore src\ProjectEuler.sln
     - name: Build
-      run: dotnet build .\src\ --configuration Release --no-restore
+      run: dotnet build src\ProjectEuler.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test .\src\ --no-restore --verbosity normal
+      run: dotnet test src\ProjectEuler.sln --no-restore --verbosity normal
