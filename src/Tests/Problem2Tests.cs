@@ -22,7 +22,6 @@ namespace ProjectEuler.Tests
         [InlineData(34, 55, 89)]
         public void GetNextFibonacciElement(int previous, int number, int expected)
         {      
-            //Assert
             Assert.Equal(expected, number.GetNextFibonacciElement(previous));
         }
         
